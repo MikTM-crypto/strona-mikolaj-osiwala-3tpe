@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Galeria Zdjęć</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        
+        main {
+            padding: 156px;
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+
+        h1 {
+            text-align: center;
+            color: #6a0dad;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+	
+        .gallery {
+            display: flex;
+            justify-content: center;
+            padding: 1px;
+        }
+        .gallery-item {
+            margin: 0 10px;
+            border: 1px solid #ddd;
+            border-radius: 9px;
+            overflow: hidden;
+            max-width: 300px;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .description {
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="rejestracja.html">Rejestracja</a></li>
+                <li><a href="logowanie.html">Logowanie</a></li>
+                <li><a href="galeria.html">Galeria Zdjęć</a></li>
+                <li><a href="harmonogram.html">Harmonogram</a></li>
+                <li><a href="page4.html">Informacje</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Galeria Zdjęć</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://plus.unsplash.com/premium_photo-1667530527025-0dbeb1777692?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Góry">
+                <div class="description">
+                    <h2>Wspaniałe Góry</h2>
+                    <p>Malowniczy widok na góry. Idealne miejsce na wypoczynek.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1602006113477-f36ae4c39562?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jezioro">
+                <div class="description">
+                    <h2>Jezioro w Lesie</h2>
+                    <p>Prześliczne jezioro otoczone zielenią. Doskonałe na piknik.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plaża">
+                <div class="description">
+                    <h2>Relaks na Plaży</h2>
+                    <p>Spędzanie czasu na plaży, podziwianie zachodu słońca.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Informacje kontaktowe: email@example.com</p>
+        <p>Śledź nas w social media:
+            <a href="#">Facebook</a>, 
+            <a href="#">Instagram</a>, 
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu').getElementsByTagName('ul')[0];
+            menu.classList.toggle('show');
+        }
+    </script>
+
+</body>
+</html>

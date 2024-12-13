@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Podróże i Turystyka</title>
+</head>
+
+    <style>
+        main {
+            padding: 260px;
+            background-image: url('https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-position: center;
+            margin: 8px;
+        }
+    </style>
+
+<body>
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="rejestracja.html">Rejestracja</a></li>
+                <li><a href="logowanie.html">Logowanie</a></li>
+                <li><a href="galeria.html">Galeria Zdjęć</a></li>
+                <li><a href="harmonogram.html">Harmonogram</a></li>
+                <li><a href="page4.html">Informacje</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Podróże i Turystyka</h1>
+        <p>Witaj w naszej społeczności pasjonatów podróży! Przygotowaliśmy dla Ciebie różnorodne zasoby, które pomogą Ci w planowaniu i realizowaniu Twoich podróży. Niezależnie od tego, czy planujesz wyprawę w góry, wizytę w mieście, czy relaks na plaży, znajdziesz tutaj coś dla siebie.</p>
+        
+        <h2>Najnowsze oferty podróży</h2>
+        <p>Zapoznaj się z naszymi najnowszymi ofertami wyjazdów oraz promocjami. Oferujemy różnorodne kierunki i pakiety, które zaspokoją potrzeby każdego podróżnika.</p>
+    </main>
+
+    <footer>
+        <p>Informacje kontaktowe: email@example.com</p>
+        <p>Śledź nas w social media:
+            <a href="#">Facebook</a>,
+            <a href="#">Instagram</a>,
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu').getElementsByTagName('ul')[0];
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

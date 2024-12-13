@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Harmonogram</title>
+    <style>
+        main {
+            padding: 100px;
+            background-image: url('https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-position: center;
+            margin: 18px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #FFC107;
+            color: black;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        td {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="rejestracja.html">Rejestracja</a></li>
+                <li><a href="logowanie.html">Logowanie</a></li>
+                <li><a href="galeria.html">Galeria Zdjęć</a></li>
+                <li><a href="harmonogram.html">Harmonogram</a></li>
+                <li><a href="page4.html">Informacje</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Harmonogram Wyjazdów</h1>
+        <p>Sprawdź nasz nadchodzący harmonogram wyjazdów oraz wydarzeń!</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Kierunek</th>
+                    <th>Typ Wycieczki</th>
+                    <th>Czas</th>
+                    <th>Liczba Miejsc</th>
+                    <th>Cena</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20-22 Maj 2023</td>
+                    <td>Tatry</td>
+                    <td>Górska</td>
+                    <td>10:00</td>
+                    <td>15</td>
+                    <td>500 PLN</td>
+                    <td>Dostępne</td>
+                </tr>
+                <tr>
+                    <td>15-23 Lipiec 2023</td>
+                    <td>Mazury</td>
+                    <td>Wodna</td>
+                    <td>09:00</td>
+                    <td>20</td>
+                    <td>800 PLN</td>
+                    <td>Dostępne</td>
+                </tr>
+                <tr>
+                    <td>5-10 Sierpień 2023</td>
+                    <td>Kraków</td>
+                    <td>Kulturalna</td>
+                    <td>08:00</td>
+                    <td>10</td>
+                    <td>700 PLN</td>
+                    <td>Dostępne</td>
+                </tr>
+                <tr>
+                    <td>1-3 Wrzesień 2023</td>
+                    <td>Wrocław</td>
+                    <td>Kulturalna</td>
+                    <td>10:00</td>
+                    <td>12</td>
+                    <td>600 PLN</td>
+                    <td>Dostępne</td>
+                </tr>
+                <tr>
+                    <td>12-15 Październik 2023</td>
+                    <td>Gdańsk</td>
+                    <td>Nadmorska</td>
+                    <td>11:00</td>
+                    <td>10</td>
+                    <td>750 PLN</td>
+                    <td>Dostępne</td>
+                </tr>
+                <tr>
+                    <td>20-25 Listopad 2023</td>
+                    <td>Zakopane</td>
+                    <td>Górska</td>
+                    <td>08:00</td>
+                    <td>5</td>
+                    <td>900 PLN</td>
+                    <td>Pełne</td>
+                </tr>
+                <tr>
+                    <td>5-10 Grudzień 2023</td>
+                    <td>Warszawa</td>
+                    <td>Kulturalna</td>
+                    <td>09:00</td>
+                    <td>15</td>
+                    <td>650 PLN</td>
+                    <td>Dostępne</td>
+                </tr>
+                <tr>
+                    <td>1-7 Styczeń 2024</td>
+                    <td>Nowy Targ</td>
+                    <td>Narciarska</td>
+                    <td>07:00</td>
+                    <td>8</td>
+                    <td>1000 PLN</td>
+                    <td>Dostępne</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>Informacje kontaktowe: email@example.com</p>
+        <p>Śledź nas w social media:
+            <a href="#">Facebook</a>,
+            <a href="#">Instagram</a>,
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu').getElementsByTagName('ul')[0];
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
